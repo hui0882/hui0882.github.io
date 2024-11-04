@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/me.jpg"/>
+	<link rel="shortcut icon" href="/img/me.jpg">
+	
+			    <title>
+    小小涵的个人博客
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="makabaka 肖涵" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">world</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Algorithm/">Algorithm</a></li><li><a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%BB%8F%E5%8E%86/">学习经历</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/hui0882" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="wechat" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-wechat"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(暂定);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >fastapi的实战经历</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>![[Pasted image 20241103194914.png]]作为一个前后端分离的项目，这个项目确实不错，但没有做到前端页面和后端逻辑在视频中的分离，看起视频来很费劲。（有一说一，视频的声音是真的小）</p>
+<p>#创建项目<br>创建项目这个部分，可以直接用conde创建环境，而且对于现在的编译器，没必要像视频中的一样，创建一个requirement.txt的文件来装载所需的依赖，直接用pip install是一个更好的选择，其余步骤和视频中的大差不差。</p>
+<p>#测试接口<br>对于接口的测试，我们可以输入访问的网址后加上  &#x2F;docs  来打开接口文档，第一次打开会有点慢，有时候不明白是前端还是后端的问题的时候就可以用这个办法来实现判断，或者也可以用postman，这个也比较好用，但很多的内容需要自己写，可以在测试文档里面的拿出来放到这个里面去测试。</p>
+<p>#数据库<br>这次的这个用的orm是SQLAlchemy，有很多的官方文档的支持，相比其他的orm，可能其他的更好，但这个的社区也比其他的更加丰富，就意味着用这个可以找到更多的对你有益的报错原因，减少很多的没必要的错误。</p>
+<p>#创建数据库<br>创建数据库可以直接在ide里面创建，或者把你的需求给ai，让ai帮你生成创建的指令，直接一条龙服务。里面可以直接先添加一条数据作为登录用的账号和密码。</p>
+<p>#开始<br>创建一个.env来存放你的数据库里面的配置信息，比如端口、IP、数据库类型、数据库地址、端口、数据库账号、密码、选择的数据库</p>
+<p>#类的创建（pydantic）<br>创建的时候创建为软件包，里面就会自动穿创建一个init的.py文件，在这个里面进行初始化，设置好里面的引擎（数据库类型），相关的语句不用可刻意去记忆。网上一般有相关的模板。<br>在fastapi中，创建类就需要用到fastapi里面的pydantic里面的Basemodel，一般情况下，接口中会检测将要接受的类是不是pydantic，如果不是的话就会报错，或者加其他的什么语句来转换或者进行禁用这个检测，但这个也是用来检测输入进来的参数是否完整，有没有缺少什么类，或者有没有不完整<br>创建之前要创建一个基础类，并且在这个里面指定要用的数据库里面的哪一个表，然后在这个里面设置好其他的内容（如果后面要被其他类继承）</p>
+<p>#接口的定义<br>创建一个api软件包，里面的init里面写好初始化的信息，还有后面使用的api就像</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> fastapi <span class="keyword">import</span> FastAPI</span><br><span class="line"></span><br><span class="line">app = FastAPI()</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> api <span class="keyword">import</span> adminApi</span><br></pre></td></tr></table></figure>
+<p>最后面的导入是每建立一个类型的api文件都要在这个里面进行导入，后面如果还有加其他的api就也是这样的操作</p>
+<p>下面以Admin的相关api进行举例<br>然后就可以正式开始建立api了，除了要建立一个AdminApi之外，还要建立一个AdminService的Python文件，两个文件的功能都不相同，api中主要处理从前端接收的信息的和在后端处理完之后返回给前端的信息，Service里面就主要是对后端里面的具体的事务逻辑进行处理，具体的方式就是创建一个和前端一样的函数，但api中要加async这个指令，实现异步<br>传入给接口和对应函数的类都需要有相应的模型类和进程<br>select就用来从接口里获取的信息传递给逻辑处理函数，随后再进行其他的业务操作，再把要返回的信息按照前端的要求封装成一个类进行返回</p>
+<p>#请求验证（token）<br>为了限制没有登录这样的没有权限的人员进行一些不允许的操作，就需要jwt鉴权这个操作，这个里面就可以用token来进行验证，在登录后自动生成一个token，这个token是独一无二的，用来鉴定当前的操作用户是否有进行当前操作的权限，此外，token也能设置自动验证，只有在有权限的时候才能操作，否则就和前端配合，重定向到登录界面，在登录之后，后续的操作就会附带token，每一个环节都检查一下token是否违法或者超时，这样就能很大程度的保证用户数据的安全。</p>
+<p>除了token，我们还需要用到hash算法来加密我们的密码，使用这个方法，在前端的抓包获取的密码就难以被解密，这样就可以对用户的信息进行保护，而且在数据库中，密码也是以hash加密后的限速出来，也可以防止密码被窃取。</p>
+<p>创建token：<br>创建token需要一个装饰器，我们创建一个auth的文件，用来存放我们的token信息</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># Author: Zachary</span></span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime, timedelta</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> jwt    <span class="comment">#导入jwt依赖</span></span><br><span class="line"><span class="keyword">from</span> fastapi <span class="keyword">import</span> Security</span><br><span class="line"><span class="keyword">from</span> fastapi.security <span class="keyword">import</span> HTTPBearer, HTTPAuthorizationCredentials</span><br><span class="line"><span class="keyword">from</span> passlib.context <span class="keyword">import</span> CryptContext</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> exception.customException <span class="keyword">import</span> TokenException</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#定义装饰器</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">AuthHandler</span>:</span><br><span class="line">    security = HTTPBearer()<span class="comment">#定义一个密钥，用于jwt的签名和验证</span></span><br><span class="line">    pwd_context = CryptContext(schemes=[<span class="string">&quot;bcrypt&quot;</span>], deprecated=<span class="string">&quot;auto&quot;</span>)</span><br><span class="line">    secret = <span class="string">&quot;SECRET&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_password_hash</span>(<span class="params">self, password</span>):<span class="comment">#获取hash密码</span></span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">self</span>.pwd_context.<span class="built_in">hash</span>(password)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">verify_password</span>(<span class="params">self, plain_password, hashed_password</span>):<span class="comment">#判断hash密码是否正确</span></span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">self</span>.pwd_context.verify(plain_password, hashed_password)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">encode_token</span>(<span class="params">self, user_id</span>):<span class="comment">#通过用户ID获取token，并且设置过期时长为7天</span></span><br><span class="line">        payload = &#123;</span><br><span class="line">            <span class="string">&#x27;exp&#x27;</span>: datetime.utcnow() + timedelta(days=<span class="number">7</span>, minutes=<span class="number">0</span>, seconds=<span class="number">0</span>),</span><br><span class="line">            <span class="string">&#x27;iat&#x27;</span>: datetime.utcnow(),</span><br><span class="line">            <span class="string">&#x27;sub&#x27;</span>: user_id</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> jwt.encode(</span><br><span class="line">            payload,</span><br><span class="line">            <span class="variable language_">self</span>.secret,</span><br><span class="line">            algorithm=<span class="string">&#x27;HS256&#x27;</span></span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">decode_token</span>(<span class="params">self, token</span>):<span class="comment">#检测token是否有效</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            payload = jwt.decode(token, <span class="variable language_">self</span>.secret, algorithms=[<span class="string">&#x27;HS256&#x27;</span>])</span><br><span class="line">            <span class="keyword">return</span> payload[<span class="string">&#x27;sub&#x27;</span>]</span><br><span class="line">        <span class="keyword">except</span> jwt.ExpiredSignatureError:</span><br><span class="line">            <span class="keyword">raise</span> TokenException(<span class="string">&quot;token过期&quot;</span>)</span><br><span class="line">        <span class="keyword">except</span> jwt.InvalidTokenError:</span><br><span class="line">            <span class="keyword">raise</span> TokenException(<span class="string">&quot;无效token&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#用于给其他程序判断token是否有效，使用Security方法，确保auth参数是从security中提取的</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">auth_required</span>(<span class="params">self, auth: HTTPAuthorizationCredentials = Security(<span class="params">security</span>)</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">self</span>.decode_token(auth.credentials)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">auth_handler = AuthHandler()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>就像上面的例子，然后在其他的接口中加上dependences&#x3D;[Deoends(auth_handle.auth_required)]</p>
+<p>但如果是所有的都要加上接口都要加上这个token鉴权，可以直接在最开始的APIRouter中加入和上面一样的语句</p>
+<p>#跨域问题<br>在后端中，需要在api的init文件中设置后相关的跨域问题的解决办法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> fastapi <span class="keyword">import</span> FastAPI</span><br><span class="line"><span class="keyword">from</span> starlette.middleware.cors <span class="keyword">import</span> CORSMiddleware</span><br><span class="line"></span><br><span class="line">app = FastAPI()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 跨域问题</span></span><br><span class="line">origins = [<span class="string">&quot;http://localhost:5173&quot;</span>, <span class="string">&quot;http://127.0.0.1:5173&quot;</span>]  <span class="comment"># 替换为你的前端应用的实际地址</span></span><br><span class="line"></span><br><span class="line">app.add_middleware(</span><br><span class="line">    CORSMiddleware,</span><br><span class="line">    allow_origins=origins,  <span class="comment"># 允许跨域访问的来源域名列表</span></span><br><span class="line">    allow_credentials=<span class="literal">True</span>,  <span class="comment"># 是否允许携带cookie</span></span><br><span class="line">    allow_methods=[<span class="string">&quot;*&quot;</span>],  <span class="comment"># 允许的方法，默认包含常见的GET、POST等，&quot;*&quot;表示所有方法</span></span><br><span class="line">    allow_headers=[<span class="string">&quot;*&quot;</span>],  <span class="comment"># 允许的请求头，默认包含常见的Content-Type等，&quot;*&quot;表示所有请求头</span></span><br><span class="line">)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>origins里面的地址就是前端应用的实际地址，这样来自这个地址的前端访问才能被接收，这样前后端才能连接上</p>
+<p>#写入数据库和读取</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># Author: Zachary</span></span><br><span class="line"><span class="comment">#导入相关依赖</span></span><br><span class="line"><span class="keyword">from</span> fastapi.encoders <span class="keyword">import</span> jsonable_encoder</span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> select</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> common.Enum <span class="keyword">import</span> Role</span><br><span class="line"><span class="keyword">from</span> common.auth <span class="keyword">import</span> auth_handler</span><br><span class="line"><span class="keyword">from</span> common.utils <span class="keyword">import</span> set_attrs</span><br><span class="line"><span class="keyword">from</span> exception.customException <span class="keyword">import</span> UserNotFoundException, PasswordNotMatchException, UserExistException</span><br><span class="line"><span class="keyword">from</span> model <span class="keyword">import</span> Session</span><br><span class="line"><span class="keyword">from</span> model.account <span class="keyword">import</span> AccountLogin, AccountLoginResponse, AccountRegister</span><br><span class="line"><span class="keyword">from</span> model.student <span class="keyword">import</span> Student</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">StudentService</span>:</span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">login</span>(<span class="params">account: AccountLogin, db_session: Session</span>) -&gt; AccountLoginResponse:</span><br><span class="line">    <span class="comment">#创建查询方法，在数据库中用select进行查询数据库，这个语句的意思是查询对象为Student这个表，后面的where为锅炉条件Z过滤条件，表示只选择表中username=传入的username的数据</span></span><br><span class="line">        query = select(Student).where(Student.username == account.username)</span><br><span class="line">        <span class="comment">#查询结果，db_session.execute用于执行查询，讲查询得到的结果返回，返回结果是一个标量结果集，这个只返回表中的第一个数据，即姓名</span></span><br><span class="line">        exist_student: Student = db_session.execute(query).scalars().first()</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> exist_student:</span><br><span class="line">            <span class="keyword">raise</span> UserNotFoundException(<span class="string">&quot;用户不存在&quot;</span>)</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> auth_handler.verify_password(account.password, exist_student.password):</span><br><span class="line">            <span class="keyword">raise</span> PasswordNotMatchException(<span class="string">&quot;身份验证未通过&quot;</span>)</span><br><span class="line">        account_login_response = AccountLoginResponse()</span><br><span class="line">        set_attrs(account_login_response, jsonable_encoder(exist_student))</span><br><span class="line">        account_login_response.token = auth_handler.encode_token(exist_student.<span class="built_in">id</span>)</span><br><span class="line">        <span class="keyword">return</span> account_login_response</span><br><span class="line"></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">register</span>(<span class="params">account: AccountRegister, db_session: Session</span>):</span><br><span class="line">        query = select(Student).where(Student.username == account.username)</span><br><span class="line">        exist_student = db_session.execute(query).scalars().first()</span><br><span class="line">        <span class="keyword">if</span> exist_student:</span><br><span class="line">            <span class="keyword">raise</span> UserExistException(<span class="string">&quot;账号已存在&quot;</span>)</span><br><span class="line"></span><br><span class="line">        new_student = Student()<span class="comment">#创建新学生对象</span></span><br><span class="line">        <span class="comment">#处理密码哈希值</span></span><br><span class="line">        account.password = auth_handler.get_password_hash(account.password)</span><br><span class="line">        <span class="comment">#设置新学生对象的属性，将account转换为json可序列化的格式</span></span><br><span class="line">        set_attrs(new_student, jsonable_encoder(account))</span><br><span class="line">        <span class="keyword">if</span> new_student.name <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            new_student.name = account.username</span><br><span class="line">        new_student.role = Role.STUDENT.name</span><br><span class="line">		<span class="comment">#将学生信息写入数据库</span></span><br><span class="line">        db_session.add(new_student)</span><br><span class="line">        db_session.commit()</span><br><span class="line">        <span class="keyword">return</span> new_student</span><br></pre></td></tr></table></figure>
+
+<p>#异常处理</p>
+<p>对于异常处理，同样的也要先创建错误类</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># Author: Zachary</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">UserNotFoundException</span>(<span class="title class_ inherited__">Exception</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, message: <span class="built_in">str</span></span>):</span><br><span class="line">        <span class="variable language_">self</span>.message = message</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">UserExistException</span>(<span class="title class_ inherited__">Exception</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, message: <span class="built_in">str</span></span>):</span><br><span class="line">        <span class="variable language_">self</span>.message = message</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">PasswordNotMatchException</span>(<span class="title class_ inherited__">Exception</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, message: <span class="built_in">str</span></span>):</span><br><span class="line">        <span class="variable language_">self</span>.message = message</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">TokenException</span>(<span class="title class_ inherited__">Exception</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, message: <span class="built_in">str</span></span>):</span><br><span class="line">        <span class="variable language_">self</span>.message = message</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">CourseExistException</span>(<span class="title class_ inherited__">Exception</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, message: <span class="built_in">str</span></span>):</span><br><span class="line">        <span class="variable language_">self</span>.message = message</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">CourseNotExistException</span>(<span class="title class_ inherited__">Exception</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, message: <span class="built_in">str</span></span>):</span><br><span class="line">        <span class="variable language_">self</span>.message = message</span><br></pre></td></tr></table></figure>
+<p>就像这样</p>
+<p>随后就也要一个异常的处理逻辑</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># Author: Zachary</span></span><br><span class="line"><span class="keyword">from</span> fastapi.encoders <span class="keyword">import</span> jsonable_encoder</span><br><span class="line"><span class="keyword">from</span> starlette.responses <span class="keyword">import</span> JSONResponse</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> api <span class="keyword">import</span> app</span><br><span class="line"><span class="keyword">from</span> fastapi <span class="keyword">import</span> Request</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> common.result <span class="keyword">import</span> Result</span><br><span class="line"><span class="keyword">from</span> exception.customException <span class="keyword">import</span> UserNotFoundException, PasswordNotMatchException, TokenException, \</span><br><span class="line">    CourseExistException, CourseNotExistException, UserExistException</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.exception_handler(<span class="params">Exception</span>)</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">exception_handler</span>(<span class="params">request: Request, exc: Exception</span>):</span><br><span class="line">    result = Result.error(code=<span class="string">&quot;500&quot;</span>, msg=<span class="built_in">str</span>(exc))</span><br><span class="line">    <span class="keyword">return</span> JSONResponse(status_code=<span class="number">500</span>, content=jsonable_encoder(result))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.exception_handler(<span class="params">UserNotFoundException</span>)</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">user_not_fount_exception_handler</span>(<span class="params">request: Request, exc: UserNotFoundException</span>):</span><br><span class="line">    result = Result.error(code=<span class="string">&quot;404&quot;</span>, msg=exc.message)</span><br><span class="line">    <span class="keyword">return</span> JSONResponse(status_code=<span class="number">404</span>, content=jsonable_encoder(result))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.exception_handler(<span class="params">PasswordNotMatchException</span>)</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">password_not_fount_exception_handler</span>(<span class="params">request: Request, exc: PasswordNotMatchException</span>):</span><br><span class="line">    result = Result.error(code=<span class="string">&quot;401&quot;</span>, msg=exc.message)</span><br><span class="line">    <span class="keyword">return</span> JSONResponse(status_code=<span class="number">401</span>, content=jsonable_encoder(result))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.exception_handler(<span class="params">TokenException</span>)</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">token_exception_handler</span>(<span class="params">request: Request, exc: TokenException</span>):</span><br><span class="line">    result = Result.error(code=<span class="string">&quot;401&quot;</span>, msg=exc.message)</span><br><span class="line">    <span class="keyword">return</span> JSONResponse(status_code=<span class="number">401</span>, content=jsonable_encoder(result))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.exception_handler(<span class="params">CourseExistException</span>)</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">course_exist_exception_handler</span>(<span class="params">request: Request, exc: CourseExistException</span>):</span><br><span class="line">    result = Result.error(code=<span class="string">&quot;400&quot;</span>, msg=exc.message)</span><br><span class="line">    <span class="keyword">return</span> JSONResponse(status_code=<span class="number">400</span>, content=jsonable_encoder(result))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.exception_handler(<span class="params">CourseNotExistException</span>)</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">course_not_exist_exception_handler</span>(<span class="params">request: Request, exc: CourseNotExistException</span>):</span><br><span class="line">    result = Result.error(code=<span class="string">&quot;404&quot;</span>, msg=exc.message)</span><br><span class="line">    <span class="keyword">return</span> JSONResponse(status_code=<span class="number">404</span>, content=jsonable_encoder(result))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.exception_handler(<span class="params">UserExistException</span>)</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">user_exist_exception_handler</span>(<span class="params">request: Request, exc: UserExistException</span>):</span><br><span class="line">    result = Result.error(code=<span class="string">&quot;400&quot;</span>, msg=exc.message)</span><br><span class="line">    <span class="keyword">return</span> JSONResponse(status_code=<span class="number">400</span>, content=jsonable_encoder(result))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>主要用于返回基本的报错信息，包括错误编码<br>主要逻辑就是从Exception中继承，接受一个message参数，并将这个赋值给self.message</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2024/10/27/fastapi%E5%AD%A6%E4%B9%A0%E7%BB%8F%E5%8E%86/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2024/10/27/fastapi%E5%AD%A6%E4%B9%A0%E7%BB%8F%E5%8E%86/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
