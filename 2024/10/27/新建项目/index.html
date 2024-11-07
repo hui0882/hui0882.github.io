@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/me.jpg"/>
+	<link rel="shortcut icon" href="/img/me.jpg">
+	
+			    <title>
+    小小涵的个人博客
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="makabaka 肖涵" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">world</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Algorithm/">Algorithm</a></li><li><a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%BB%8F%E5%8E%86/">学习经历</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/hui0882" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="wechat" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-wechat"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >fastapi新建项目的基本流程</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h1><p>创建model，api，commom，service等软件包<br>创建.evn文件存放基本的配置信息<br>创建main文件进行相关的测试</p>
+<h1 id="common文件"><a href="#common文件" class="headerlink" title="common文件"></a>common文件</h1><p>common文件夹用于存放公共类或者公共的方法</p>
+<h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><p>在这个目录下面创建config的文件，实现对环境变量的获取</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os  </span><br><span class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path  </span><br><span class="line"><span class="keyword">from</span> dotenv <span class="keyword">import</span> load_dotenv  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Config</span>:  </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):  </span><br><span class="line">        dotenv_path = Path(__file__).parent.parent/<span class="string">&quot;.env&quot;</span>  </span><br><span class="line">        load_dotenv(dotenv_path = dotenv_path)  </span><br><span class="line">        <span class="variable language_">self</span>._env = <span class="built_in">dict</span>(os.environ)  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="meta">	@property  </span></span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">env</span>(<span class="params">self</span>):  </span><br><span class="line">		<span class="keyword">return</span> <span class="variable language_">self</span>._env  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">config = Config()</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="constant"><a href="#constant" class="headerlink" title="constant"></a>constant</h2><p>再在这个目录下面创建一个constant.py的文件，用于配置常量</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> common.config <span class="keyword">import</span> config  </span><br><span class="line">  </span><br><span class="line">HOST = config.env.get(<span class="string">&#x27;HOST&#x27;</span>)  </span><br><span class="line">PORT = config.env.get(<span class="string">&#x27;PORT&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="result"><a href="#result" class="headerlink" title="result"></a>result</h2><p>接着实现api的通用返回类，创建result.py文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> pydantic <span class="keyword">import</span> BaseModel  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ResultBase</span>:  </span><br><span class="line">    code:<span class="built_in">str</span>  </span><br><span class="line">    msg: <span class="built_in">str</span>  </span><br><span class="line">    data: <span class="built_in">dict</span>  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ResultModel</span>(BaseModel,ResultBase):  </span><br><span class="line">    <span class="keyword">pass</span>  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Result</span>(<span class="title class_ inherited__">ResultModel</span>):  </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,code,msg,data</span>):  </span><br><span class="line">        <span class="variable language_">self</span>.code = code  </span><br><span class="line">        <span class="variable language_">self</span>.msg = msg  </span><br><span class="line">        <span class="variable language_">self</span>.data = data  </span><br><span class="line">      </span><br><span class="line">      </span><br><span class="line"><span class="meta">    @classmethod  </span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">success</span>(<span class="params">cls,code: <span class="built_in">str</span> = <span class="string">&quot;200&quot;</span>,msg: <span class="built_in">str</span> = <span class="string">&quot;success&quot;</span>,data: <span class="built_in">object</span> = <span class="literal">None</span></span>):  </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> data:  </span><br><span class="line">            data = &#123;&#125;  </span><br><span class="line">        <span class="keyword">return</span> cls(code, msg, data)  </span><br><span class="line">      </span><br><span class="line"><span class="meta">    @classmethod  </span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">error</span>(<span class="params">cls,code: <span class="built_in">str</span> = <span class="string">&quot;500&quot;</span>,msg: <span class="built_in">str</span> = <span class="string">&quot;error&quot;</span>,data: <span class="built_in">object</span> = <span class="literal">None</span></span>):  </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> data:  </span><br><span class="line">            data = &#123;&#125;  </span><br><span class="line">        <span class="keyword">return</span> cls(code, msg, data)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="exception"><a href="#exception" class="headerlink" title="exception"></a>exception</h2><h2 id="api"><a href="#api" class="headerlink" title="api"></a>api</h2><p>在软件包的init文件中进行初始化</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> fastapi <span class="keyword">import</span> FastAPI  </span><br><span class="line">  </span><br><span class="line">app = FastAPI()</span><br></pre></td></tr></table></figure>
+
+<h3 id="项目下的各个接口类（以admin为例子）"><a href="#项目下的各个接口类（以admin为例子）" class="headerlink" title="项目下的各个接口类（以admin为例子）"></a>项目下的各个接口类（以admin为例子）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> api <span class="keyword">import</span> app  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> common.result <span class="keyword">import</span> Result  </span><br><span class="line">  </span><br><span class="line"><span class="meta">@app.get(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)  </span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">hello</span>():  </span><br><span class="line">    <span class="keyword">return</span> Result.success(<span class="string">&#x27;Hello World!&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>然后在init中说明</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> fastapi <span class="keyword">import</span> FastAPI  </span><br><span class="line">  </span><br><span class="line">app = FastAPI()  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> api <span class="keyword">import</span> adminApi</span><br></pre></td></tr></table></figure>
+
+<h2 id="service"><a href="#service" class="headerlink" title="service"></a>service</h2><h2 id="main主程序"><a href="#main主程序" class="headerlink" title="main主程序"></a>main主程序</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> uvicorn  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> common.constant <span class="keyword">import</span> HOST,PORT  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:  </span><br><span class="line">    uvicorn.run(<span class="string">&quot;main:app&quot;</span>, host=HOST, port=<span class="built_in">int</span>(PORT),reload=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="设置数据库（以MySQL为例）"><a href="#设置数据库（以MySQL为例）" class="headerlink" title="设置数据库（以MySQL为例）"></a>设置数据库（以MySQL为例）</h2><p>在.env更新数据库信息</p>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">HOST = &quot;localhost&quot;  </span><br><span class="line">PORT = &quot;9090&quot;  </span><br><span class="line">  </span><br><span class="line">MYSQL_DIALECT = &quot;mysql+mysqldb&quot;  </span><br><span class="line">MYSQL_HOST = &quot;localhost&quot;  </span><br><span class="line">MYSQL_PORT = &quot;3306&quot;  </span><br><span class="line">MYSQL_USER = &quot;root&quot;  </span><br><span class="line">MYSQL_PASSWORD = &quot;123456&quot;  </span><br><span class="line">MYSQL_DATABASE = &quot;test_web&quot;</span><br></pre></td></tr></table></figure>
+
+<p>在constant中也要更新</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> common.config <span class="keyword">import</span> config  </span><br><span class="line">  </span><br><span class="line">HOST = config.env.get(<span class="string">&quot;HOST&quot;</span>)  </span><br><span class="line">PORT = config.env.get(<span class="string">&quot;PORT&quot;</span>)  </span><br><span class="line">  </span><br><span class="line">MYSQL_DIALECT = config.env.get(<span class="string">&quot;MYSQL_DIALECT&quot;</span>)  </span><br><span class="line">MYSQL_HOST = config.env.get(<span class="string">&quot;MYSQL_HOST&quot;</span>)  </span><br><span class="line">MYSQL_PORT = config.env.get(<span class="string">&quot;MYSQL_PORT&quot;</span>)  </span><br><span class="line">MYSQL_USER = config.env.get(<span class="string">&quot;MYSQL_USER&quot;</span>)  </span><br><span class="line">MYSQL_PASSWORD = config.env.get(<span class="string">&quot;MYSQL_PASSWORD&quot;</span>)  </span><br><span class="line">MYSQL_DATABASE = config.env.get(<span class="string">&quot;MYSQL_DATABASE&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>在model&#x2F;<em>init</em>.py中进行初始化</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> create_engine  </span><br><span class="line"><span class="keyword">from</span> sqlalchemy.orm <span class="keyword">import</span> sessionmaker,DeclarativeBase  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> common <span class="keyword">import</span> *  </span><br><span class="line"><span class="keyword">from</span> common.constant <span class="keyword">import</span> MYSQL_DATABASE, MYSQL_USER, MYSQL_DIALECT, MYSQL_PASSWORD, MYSQL_PORT, MYSQL_HOST  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Base</span>(<span class="title class_ inherited__">DeclarativeBase</span>):  </span><br><span class="line">    <span class="keyword">pass</span>  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="comment">#mysql+mysqldb://&lt;user&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/&lt;dbname&gt;  </span></span><br><span class="line">engine = create_engine(  </span><br><span class="line">    <span class="string">f&quot;<span class="subst">&#123;MYSQL_DIALECT&#125;</span>://<span class="subst">&#123;MYSQL_USER&#125;</span>:<span class="subst">&#123;MYSQL_PASSWORD&#125;</span>@<span class="subst">&#123;MYSQL_HOST&#125;</span>:<span class="subst">&#123;MYSQL_PORT&#125;</span>/<span class="subst">&#123;MYSQL_DATABASE&#125;</span>?charset=utf8&quot;</span>,  </span><br><span class="line">    echo=<span class="literal">True</span>  </span><br><span class="line">)  </span><br><span class="line">  </span><br><span class="line">Base.metadata.create_all(engine)  </span><br><span class="line">Session = sessionmaker(bind=engine)</span><br></pre></td></tr></table></figure>
+
+<h2 id="定义实体类"><a href="#定义实体类" class="headerlink" title="定义实体类"></a>定义实体类</h2><p>在model下新建一个admin.py</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pydantic <span class="keyword">import</span> BaseModel  </span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> Integer,String  </span><br><span class="line"><span class="keyword">from</span> sqlalchemy.orm <span class="keyword">import</span> Mapped,mapped_column  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> model <span class="keyword">import</span> Base  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Admin</span>(<span class="title class_ inherited__">Base</span>):  </span><br><span class="line">    __tablename__ = <span class="string">&#x27;admin&#x27;</span>  </span><br><span class="line">    <span class="built_in">id</span>: Mapped[<span class="built_in">int</span>] = mapped_column(Integer,primary_key=<span class="literal">True</span>,nullable=<span class="literal">False</span>)  </span><br><span class="line">    username: Mapped[<span class="built_in">str</span>] = mapped_column(String(<span class="number">255</span>),nullable=<span class="literal">False</span>)  </span><br><span class="line">    password: Mapped[<span class="built_in">str</span>] = mapped_column(String(<span class="number">255</span>),nullable=<span class="literal">False</span>)  </span><br><span class="line">      </span><br><span class="line">      </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">AdminModel</span>(<span class="title class_ inherited__">BaseModel</span>):  </span><br><span class="line">    username: <span class="built_in">str</span>  </span><br><span class="line">    password: <span class="built_in">str</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="登录接口准备"><a href="#登录接口准备" class="headerlink" title="登录接口准备"></a>登录接口准备</h2><p>为了实现每一个api都能拿到一个连接数据库的session,在model&#x2F;init中实现一个session的获取方法,可以加在这个文件的最后面</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_session</span>():  </span><br><span class="line">    session = Session()  </span><br><span class="line">    <span class="keyword">try</span>:  </span><br><span class="line">        <span class="keyword">yield</span> session  </span><br><span class="line">    <span class="keyword">finally</span>:  </span><br><span class="line">        session.close()</span><br></pre></td></tr></table></figure>
+
+<h2 id="登录接口的设置"><a href="#登录接口的设置" class="headerlink" title="登录接口的设置"></a>登录接口的设置</h2><p>先设置异常处理,用来应对账号信息不存在或者登录不上的一些其他问题<br>在项目文件下创建一个exception的软件包,在里面创建一个customException.py的文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">UserNotFoundException</span>(<span class="title class_ inherited__">Exception</span>):  </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,message: <span class="built_in">str</span></span>):  </span><br><span class="line">        <span class="variable language_">self</span>.message = message  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">PasswordNotMatchException</span>(<span class="title class_ inherited__">Exception</span>):  </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,message: <span class="built_in">str</span></span>):  </span><br><span class="line">        <span class="variable language_">self</span>.message = message</span><br></pre></td></tr></table></figure>
+
+<p>然后在&#x2F;api包下面创建一个exceptionHandler.py的文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> fastapi.encoders <span class="keyword">import</span> jsonable_encoder  </span><br><span class="line"><span class="keyword">from</span> starlette.responses <span class="keyword">import</span> JSONResponse  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> api <span class="keyword">import</span> app  </span><br><span class="line"><span class="keyword">from</span> fastapi <span class="keyword">import</span> Request  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> common.result <span class="keyword">import</span> Result  </span><br><span class="line"><span class="keyword">from</span> exception.customException <span class="keyword">import</span> UserNotFoundException,PasswordNotMatchException  </span><br><span class="line">  </span><br><span class="line"><span class="meta">@app.exception_handler(<span class="params">UserNotFoundException</span>)  </span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">user_not_found_exception_handler</span>(<span class="params">request: Request, exc: UserNotFoundException</span>):  </span><br><span class="line">    result = Result.error(code=<span class="string">&#x27;404&#x27;</span>,msg=exc.message)  </span><br><span class="line">    <span class="keyword">return</span> JSONResponse(status_code=<span class="number">404</span>, content=jsonable_encoder(result))  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="meta">@app.exception_handler(<span class="params">PasswordNotMatchException</span>)  </span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">password_not_match_exception_handler</span>(<span class="params">request: Request, exc: PasswordNotMatchException</span>):  </span><br><span class="line">    result = Result.error(code=<span class="string">&#x27;401&#x27;</span>,msg=exc.message)  </span><br><span class="line">    <span class="keyword">return</span> JSONResponse(status_code=<span class="number">401</span>, content=jsonable_encoder(result))</span><br></pre></td></tr></table></figure>
+
+<p>在api的目录下面更新之后要干嘛呢??<br>当然是在init里面进行更新啦</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> fastapi <span class="keyword">import</span> FastAPI  </span><br><span class="line">  </span><br><span class="line">app = FastAPI()  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> api <span class="keyword">import</span> adminApi,exceptionHandler</span><br></pre></td></tr></table></figure>
+
+
+<p>之前创建的service的文件夹终于有用了😭<br>在里面新建adminservice.py的文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> select  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> exception.customException <span class="keyword">import</span> UserNotFoundException,PasswordNotMatchException  </span><br><span class="line"><span class="keyword">from</span> model <span class="keyword">import</span> Session  </span><br><span class="line"><span class="keyword">from</span> model.admin <span class="keyword">import</span> Admin,AdminModel  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">AdminService</span>:  </span><br><span class="line"><span class="meta">    @staticmethod  </span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">login</span>(<span class="params">admin: AdminModel, db_session: Session</span>) -&gt; Admin:  </span><br><span class="line">        query = select(Admin).where(Admin.username == admin.username)  </span><br><span class="line">        result = db_session.execute(query).scalars().first()  </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> result:  </span><br><span class="line">            <span class="keyword">raise</span> UserNotFoundException(<span class="string">&quot;用户不存在&quot;</span>)  </span><br><span class="line">        <span class="keyword">if</span> result.password != admin.password:  </span><br><span class="line">            <span class="keyword">raise</span> PasswordNotMatchException(<span class="string">&quot;身份验证未通过&quot;</span>)  </span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<p>最后完善api部分<br>新建adminApi.py</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> fastapi <span class="keyword">import</span> Body,Depends  </span><br><span class="line"><span class="keyword">from</span> fastapi.encoders <span class="keyword">import</span> jsonable_encoder  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">from</span> api <span class="keyword">import</span> app  </span><br><span class="line"><span class="keyword">from</span> common.result <span class="keyword">import</span> Result,ResultModel  </span><br><span class="line"><span class="keyword">from</span> model <span class="keyword">import</span> Session,get_session  </span><br><span class="line"><span class="keyword">from</span> model.admin <span class="keyword">import</span> AdminModel  </span><br><span class="line"><span class="keyword">from</span> service.adminservice <span class="keyword">import</span> AdminService  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="meta">@app.post(<span class="params"><span class="string">&quot;/login&quot;</span></span>)  </span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">def</span> <span class="title function_">login</span>(<span class="params">admin: AdminModel = Body(<span class="params">...</span>),db_session = Depends(<span class="params">get_session</span>)</span>):  </span><br><span class="line">    dbadmin = AdminService.login(admin,db_session)  </span><br><span class="line">    <span class="keyword">return</span> Result.success(jsonable_encoder(dbadmin))</span><br></pre></td></tr></table></figure>
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2024/10/27/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2024/10/27/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a style="border-bottom: none;">huitaiyang</a></li>
+                <li>Design: <a style="border-bottom: none;">wahaha</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
