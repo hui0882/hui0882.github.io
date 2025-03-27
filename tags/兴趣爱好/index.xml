@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>兴趣爱好 on 天色初晴</title><link>https://hui0882.github.io/tags/%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD/</link><description>Recent content in 兴趣爱好 on 天色初晴</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 26 Mar 2025 13:21:00 +0800</lastBuildDate><atom:link href="https://hui0882.github.io/tags/%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD/index.xml" rel="self" type="application/rss+xml"/><item><title>小智ESP32的后台程序本地化部署</title><link>https://hui0882.github.io/post/study/%E5%B0%8F%E6%99%BAesp32-s3%E7%9A%84%E5%90%8E%E5%8F%B0%E9%83%A8%E7%BD%B2/</link><pubDate>Wed, 26 Mar 2025 13:21:00 +0800</pubDate><guid>https://hui0882.github.io/post/study/%E5%B0%8F%E6%99%BAesp32-s3%E7%9A%84%E5%90%8E%E5%8F%B0%E9%83%A8%E7%BD%B2/</guid><description>&lt;h2 id="开始准备">
+&lt;a class="header-anchor" href="#%e5%bc%80%e5%a7%8b%e5%87%86%e5%a4%87">&lt;/a>
+开始准备
+&lt;/h2>&lt;ul>
+&lt;li>硬件: 一套兼容&lt;code>xiaozhi-esp32&lt;/code> 的硬件设备,我这里用的是esp32-s3&lt;/li>
+&lt;li>有一台性能足够的电脑,用云服务器也可以,如果语音识别服务使用API的话,使用2核CPU,2G内存的服务器也可以&lt;/li>
+&lt;/ul>
+&lt;h2 id="开始开发">
+&lt;a class="header-anchor" href="#%e5%bc%80%e5%a7%8b%e5%bc%80%e5%8f%91">&lt;/a>
+开始开发
+&lt;/h2>&lt;h4 id="开发步骤">
+&lt;a class="header-anchor" href="#%e5%bc%80%e5%8f%91%e6%ad%a5%e9%aa%a4">&lt;/a>
+开发步骤
+&lt;/h4>&lt;ol>
+&lt;li>首先在github上将小智服务端的代码全部下来&lt;/li>
+&lt;li>申请要使用的大模型API服务
+&lt;ol>
+&lt;li>ASR语音识别&lt;/li>
+&lt;li>LLM大模型&lt;/li>
+&lt;li>TTS语音生成&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>将自己的API key填写到配置信息中&lt;/li>
+&lt;li>运行自己的程序,进行初步测试&lt;/li>
+&lt;li>修改小智固件内的代码&lt;/li>
+&lt;li>部署小智后台到云服务器上(可选)&lt;/li>
+&lt;/ol>
+&lt;h4 id="服务端配置与启动">
+&lt;a class="header-anchor" href="#%e6%9c%8d%e5%8a%a1%e7%ab%af%e9%85%8d%e7%bd%ae%e4%b8%8e%e5%90%af%e5%8a%a8">&lt;/a>
+服务端配置与启动
+&lt;/h4>&lt;ol>
+&lt;li>
+&lt;p>使用git克隆仓库到本地
+&lt;code>git clone https://github.com/xinnan-tech/xiaozhi-esp32-server.git&lt;/code> 在你想要放置这个代码的位置在任务的菜单栏输入cmd,打开cmd命令提示符
+&lt;img src="https://hui0882.github.io/images/cmd.png" alt="">
+然后在打开的窗口中输入上面的命令,把仓库克隆到本地,我这是已经弄好了的&lt;/p></description></item></channel></rss>
